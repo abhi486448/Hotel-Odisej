@@ -1,7 +1,7 @@
 function loco() {
     gsap.registerPlugin(ScrollTrigger);
 
-    // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
+    // Using Locomotive Scroll from Locomotive
 
     const locoScroll = new LocomotiveScroll({
         el: document.querySelector(".main"),
@@ -82,7 +82,6 @@ function loder() {
         .from(".nav-part1,.nav-part2", {
             opacity: 0,
             duration: 0.5,
-            // y: -100,
             delay: -0.3,
         })
 }
@@ -99,7 +98,6 @@ function textAnimation() {
             clutter += `<span>${e}</span>`;
         })
         elem.innerHTML = clutter;
-        //    console.log(clutter);
     })
     gsap.to(".page2 .text-content>h2 span", {
         color: "#E3E3C4",
@@ -107,7 +105,6 @@ function textAnimation() {
         scrollTrigger: {
             trigger: ".page2 .text-content>h2 span",
             scroller: ".main",
-            //   markers: true,
             start: "top 60%",
             end: "top -30%",
             scrub: 2,
@@ -122,8 +119,7 @@ function textAnimation() {
         let splited = elem.textContent.split("");
         let clutter = " ";
         splited.forEach((e) => {
-            clutter += `<span>${e}</span>`;
-            // console.log(e);       
+            clutter += `<span>${e}</span>`;      
         })
         elem.innerHTML = clutter;
     })
@@ -133,7 +129,6 @@ function textAnimation() {
         scrollTrigger: {
             trigger: ".page3 .text-content2",
             scroller: ".main",
-            // markers:true,
             start: "top 50%",
             end: "top 20%",
             scrub: 2,
@@ -143,12 +138,10 @@ function textAnimation() {
     let h2Page6 = document.querySelectorAll(".page6 .page6-text>h2");
     h2Page6.forEach((elem) => {
         let splited = elem.textContent.split("");
-        // let clutter = " ";
         elem.innerHTML = " ";
         splited.forEach((e) => {
             elem.innerHTML += `<span>${e}</span>`;
         })
-        //  elem.innerHTML = clutter;
     })
     gsap.to(".page6 .page6-text>h2 span", {
         color: '#E3E3C4',
@@ -156,7 +149,6 @@ function textAnimation() {
         scrollTrigger: {
             trigger: ".page6 .page6-text",
             scroller: ".main",
-            // markers:true,
             start: "top 50%",
             end: "top 20%",
             scrub: 2,
@@ -180,7 +172,6 @@ function textAnimation() {
         scrollTrigger: {
             trigger: ".page7 ",
             scroller: ".main",
-            // markers:true,
             start: "top 50%",
             end: "top -30%",
             scrub: 2,
@@ -204,7 +195,6 @@ function textAnimation() {
         scrollTrigger: {
             trigger: ".page10 .page10-text-content",
             scroller: ".main",
-            // markers:true,
             start: "top 50%",
             end: "top 20%",
             scrub: 2,
@@ -220,7 +210,6 @@ function svgscroll() {
             trigger: ".page2 #svg2",
             scroller: ".main",
             scrub: 2,
-            // markers:true,
         }
     })
 
@@ -231,7 +220,6 @@ function svgscroll() {
             trigger: ".page6 #page6-svg1",
             scroller: ".main",
             scrub: 2,
-            // markers:true,
         }
     })
     //page6 SvgScroller bottom
@@ -241,7 +229,6 @@ function svgscroll() {
             trigger: ".page6 #page6-svg3",
             scroller: ".main",
             scrub: 2,
-            // markers:true,
         }
     })
 
@@ -253,7 +240,6 @@ function svgscroll() {
             trigger: ".page10 #page10-svg1",
             scroller: ".main",
             scrub: 2,
-            // markers:true,
         }
     })
 }
@@ -281,7 +267,6 @@ function page8Animationimg() {
         scrollTrigger: {
             trigger: ".page8",
             scroller: ".main",
-            // markers: true,
             start: "top 70%",
             end: "top 30%",
             scrub: 2,
@@ -308,7 +293,6 @@ function navsvgfn() {
         scrollTrigger: {
             trigger: ".page1",
             scroller: ".main",
-            // markers: true,
             start: "top -1%",
             end: "top -8%",
             scrub: 1,
